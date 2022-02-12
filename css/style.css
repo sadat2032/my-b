@@ -1,0 +1,360 @@
+/* Common css start */
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    outline: 0;
+}
+body{
+    font-family: open sans;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+text-center{
+    text-align: center;
+}
+
+
+/* // Common css end// */
+
+
+/* nav css start */
+
+
+#one{
+    background-color: #444;
+    color: #fff;
+}
+
+#one .one0 ul li,
+#one .one00 ul li{
+    display: inline-block;
+    
+}
+#one .one00{
+    text-align: right;
+}
+#one .one0,
+#one .one00{
+    width: 50%;
+    
+}
+#one .one0 ul li a,
+#one .one00 ul li a{
+    display: inline-block;
+    padding: 25px 10px;
+    border-right: 1px solid #fff;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff
+    transition: all .3s linear;
+}
+#one .one0:last-child{
+    border-color: transparent;
+}
+#one .one0 ul li:hover a,
+#one .one00 ul li:hover a{
+    color: #e78382;
+}
+
+
+
+
+
+#two{
+    background-color: #fff;
+    
+}
+#two .container .row{
+    align-items: center;
+}
+#two .nav_img,
+#two .nav_src{
+    width: 15%;
+}
+#two .nav_src{
+    display: inline-block;
+    text-align: right;
+}
+#two .nav_img img{
+    display: inline-block;
+}
+#two .nav_menu{
+    width: 70%;
+    text-align: center;
+}
+#two .nav_menu ul li{
+    display: inline-block;
+    margin: 12px 0;
+}
+#two .nav_menu ul li a,
+#two .nav_src ul li i{
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222;
+    padding: 40px 18px;
+    transition: all .3s linear;
+
+}
+#two .nav_src ul li {
+    bottom: 0;
+    left: 0;
+}
+#two .nav_menu ul li:hover A,
+#two .nav_src ul li:hover i{
+    color: #e78382;
+}
+ 
+
+
+
+/* // nav css end// */
+
+
+/* BAnner css start */
+
+#banner{
+    height: 600px;
+    background: url(../Images/Banner.png);
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+}
+#banner::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .60);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#banner .container,
+#banner .container .row{
+    height: 100%;
+}
+#banner .banner_container{
+    width: 50%;
+}
+#banner .container > .row{
+    align-items: center;
+}
+#banner .banner_container{
+    width: 100%;
+    color: #fff;
+}
+#banner .banner_container h1{
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    
+}
+#banner .banner_container h2{
+    font-size: 70px;
+    font-weight: 700;
+    color: #de4644;
+}
+#banner .banner_container p{
+    font-size: 14px;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+}
+#banner .banner_btn a{
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 20px 15px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 
+    margin: 10px;
+    transition: all .2s linear;
+}
+#banner .banner_btn:hover a{
+    background-color: #de4644;
+}
+
+
+/* // Banner css end// */
+
+/* about css start */
+
+#about{
+    background-color: #f1f1f1;
+    color: #444;
+}
+#about .about0 ul li{
+    display: inline-block;
+    width: 33%;
+}
+#about .about0 ul li a{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 20px 30px;
+    color: #444;
+    transition: all .3s linear;
+    border-right: 1px solid #ddd;
+}
+#about .about0 ul li:hover a{
+    color: #e78382;
+}
+
+
+
+/* // about css end// */
+
+
+/* Products 01 css start */
+#about_img .about_img1{
+    height: 400px;
+    width: 370px;
+    background-image: url(../Images/about-img-01.png);
+    position: relative;
+    background-size: cover;
+    z-index: 2;
+    visibility: ;
+    opacity: ;
+}
+#about_img .about_img2{
+    height: 400px;
+    width: 370px;
+    background-image: url(../Images/about-img-02.png);
+    position: relative;
+    background-size: cover;
+    z-index: 2;
+    visibility: ;
+    opacity: ;
+}
+#about_img .about_img3{
+    height: 400px;
+    width: 370px;
+    background-image: url(../Images/about-img-03.png);
+    position: relative;
+    background-size: cover;
+    z-index: 2;
+    visibility: visible;
+    opacity: 
+}
+#about_img .about_img1::after,
+#about_img .about_img3::after,    
+#about_img .about_img2::after{
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 50%;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, .80);
+    z-index: -1;
+    visibility: ;
+    opacity: ;
+}
+#about_img .about_img1,{
+    width: 33.33%;
+    display: inline-block;
+}
+#about_img .about_img1 h4,
+#about_img .about_img2 h4,
+#about_img .about_img3 h4{
+    display: inline-block;
+    font-size: 34px;
+    font-weight: 700;
+    color: ;
+}
+#about_img .about_img1 p,
+#about_img .about_img2 p,
+#about_img .about_img3 p{
+    font-size: 24px;
+    font-weight: 700;
+}
+#about_img .about_img1 a,
+#about_img .about_img2 a,
+#about_img .about_img3 a{
+    font-size: 16px;
+    display: inline-block;
+    font-weight: 400;
+    border: 1px solid #fff ;
+    padding: 7px 20px;
+    border-radius: 5px;
+    transition: all .3s linear;
+}
+#about_img .about_img1:hover a,
+#about_img .about_img2:hover a,
+#about_img .about_img3:hover a{
+    background-color: #de4644; 
+}
+#about_img .product1 ul li{
+    display: inline-block;
+    margin: 10px 0;
+    padding: 0px 30px;   
+}
+
+/* //Products 01 css start// */
+
+
+/* feature product css start*/
+
+#feature_p .feature_p1{
+    width: 100%;
+    text-align: center;
+}
+#feature_p .feature_p1 h3{
+    font-size: 40px;
+    font-weight: 700;
+    padding: 30px 0;
+}
+
+/* //feature product css end// */
+
+
+/* feature post_nav css start */
+
+nav .fp_nav{
+    width: 100%;
+    text-align: center;
+}
+nav .fp_nav ul li{
+    display: inline-block;
+    margin: 12px 0;
+}
+nav .fp_nav ul li a{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 15px 10px;
+    color: #444;
+    border-right: 1px solid;
+    transition: all .3s linear;
+
+}
+nav .fp_nav ul li:hover a{
+    color: #de4644;
+}
+
+/* //feature post_nav css end// */
+
+
+
+
+
+
+
+
